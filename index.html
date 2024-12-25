@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad Agus</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        
+        #arbol {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 300px;
+            background-color: #008000;
+            border-radius: 10px;
+        }
+        
+        #copos {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url("(link unavailable)");
+            background-size: cover;
+            animation: caer 10s linear infinite;
+        }
+        
+        #papa-noel {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 150px;
+            background-image: url("(link unavailable)");
+            background-size: cover;
+        }
+        
+        #texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #008000;
+            text-align: center;
+        }
+        
+        @keyframes caer {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 -100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="copos"></div>
+    <div id="arbol"></div>
+    <div id="papa-noel"></div>
+    <div id="texto">
+        <p>Feliz Navidad Agus</p>
+        <p>Que tengas una hermosa noche,</p>
+        <p>que la pases genial con tu familia,</p>
+        <p>te quiero mucho, abrazos</p>
+    </div>
+</body>
+</html>
